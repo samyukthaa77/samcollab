@@ -1,9 +1,12 @@
-.navbar-css {
+.nav {
     background-color: #6a72a1;
-    box-shadow: 5px 10px #000;
 }
 
-.carousel-css {
+.carousel-settings {
     width: 100%; 
     height: 500px;
+}
+
+.check-box {
+    background-color: #10153d;
 }
