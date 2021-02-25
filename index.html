@@ -11,39 +11,52 @@
 
 	<!-- NAVBAR BEGINNING -->
 	<nav class="navbar navbar-expand-lg navbar-light sticky-top nav shadow">
-  		<div class="container-fluid row">
-    		<a class="navbar-brand col-8 ms-5" href="#">
-    		  <img src="samcollab_logo.png" alt="" width="140" height="50">
-    		</a>
-    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		  <span class="navbar-toggler-icon"></span>
-    		</button>
-    		<div class="collapse navbar-collapse text-css navbar-light" id="navbarSupportedContent">
-    		  	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    		  	  	<li class="nav-item">
-    		  	  	  <a class="nav-link active" aria-current="page" href="#">Home</a>
-    		  	  	</li>
-    		  	  	<li class="nav-item">
-    		  	  	  <a class="nav-link" style="font-weight: 500;" href="#">Link</a>
-    		  	  	</li>
-    		  	  	<li class="nav-item dropdown">
-    		  	  	  <a class="nav-link dropdown-toggle" style="font-weight: 500;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-    		  	  	  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-    		  	  	    <li><a class="dropdown-item" href="#">Action</a></li>
-    		  	  	    <li><a class="dropdown-item" href="#">Another action</a></li>
-    		  	  	    <li><hr class="dropdown-divider"></li>
-    		  	  	    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    		  	  	  </ul>
-    		  	  	</li>
-    		  	</ul>
-    		  <form class="d-flex">
-    		    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-    		    <button class="btn btn-outline-light" type="submit">Search</button>
-    		  </form>
-    		</div>
- 		</div>
-	</nav>
+		<div class="container-fluid row">
+		  <a class="navbar-brand col-8 ms-5" href="#">
+			<img src="samcollab_logo.png" alt="" width="140" height="50">
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse text-css navbar-light col-4" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active me-2" aria-current="page" href="#">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link me-2" href="#inquiry">Inquiry</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <li><a class="dropdown-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#modal">Action</a></li>
+					  <li><a class="dropdown-item" href="#">Another action</a></li>
+					</ul>
+				  </li>
+				</ul>
+		  </div>
+	   </div>
+  	</nav>
 	<!-- NAVBAR END -->
+
+	<!-- MODAL BEGINNING -->
+	<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  U DID IT
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	<!-- MODAL END -->
 
 	<!-- CAROUSEL BEGINNING -->
 	<div class="row">
@@ -51,16 +64,30 @@
 			<div class="carousel-inner carousel-settings">
 				<div class="carousel-item active">
 					<img src="edit1.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>First slide label</h5>
-						<p>Some representative placeholder content for the first slide.</p>
+					<div class="carousel-caption d-none d-md-block position-absolute bottom-50">
+						<h2 class="fs-1 fw-bold">About</h2><br>
+						<h5>
+							A passionate dancer looking to connect with new people and explore the art form.
+							SamCollab is a website through which other dancers can collaborate with me. This 
+							could help both of us learn new techniques and styles. 
+						</h5>
 					</div>
 				</div>
 				<div class="carousel-item">
 					<img src="edit2.jpg" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block position-absolute bottom-50">
+						<h2 class="fs-1 fw-bold">Why should you join me?</h2><br>
+						<h5>
+							I've been a dancer since the age of 3 and I love learning new styles. I don't take 
+							credit for what's not mine and I am a fun loving person to work with!
+						</h5>
+					</div>
 				</div>
 				<div class="carousel-item">
 					<img src="edit3.jpg" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block position-absolute top-0">
+						<h2 class="fs-2 mt-5 fw-bold">What are you waiting for? Contact me now!</h2><br>
+					</div>
 				</div>
 			</div>
 			<div>
@@ -81,9 +108,9 @@
 	<div class="p-1 check-box">
 		<div class="row p-5 mx-md-5 text-light">
 			<div>
-				<h5> Tell me your favourite style of dance!</h5><br>
+				<h5 class="check-box__title fs-3"> Tell me your favourite style of dance!</h5><br>
 			</div>
-			<div class="row">
+			<div class="row check-box__content fs-5">
 				<div class="col-4">
 					<div class="form-check">
 						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -133,41 +160,40 @@
 	<!-- CHECK BOX END -->
 
 	<!-- INQUIRY PAGE BEGINNING-->
-	<div class="row col-11 mx-auto p-5">
-		<div class="input-group mb-3">
-			<span class="input-group-text" id="basic-addon1">@</span>
-			<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+	<section class="pt-5" id="inquiry" style="position: relative;">
+		<div class="row col-11 ms-auto me-5 p-1 border border-3">
+			<h4 class="pt-2">Inquiry Tab</h4>
+			<form class="row g-3">
+				<div class="col-md-6">
+					<label for="inputEmail4" class="form-label">First Name</label>
+					<input type="text" class="form-control" id="inputEmail4">
+				</div>
+				<div class="col-md-6">
+					<label for="inputPassword4" class="form-label">Last Name</label>
+					<input type="text" class="form-control" id="inputPassword4">
+				</div>
+				<div class="col-md-6">
+					<label for="inputEmail4" class="form-label">Email</label>
+					<input type="email" class="form-control" id="inputEmail4">
+				</div>
+				<div class="col-md-6">
+					<label for="inputPassword4" class="form-label">Phone number</label>
+					<input type="text" class="form-control" id="inputPassword4">
+				</div>
+				<div class="col-md-12">
+					<label for="inputCity" class="form-label">How can I help you?</label>
+					<textarea type="text" class="form-control" id="inputCity"></textarea>
+				</div>
+				<div class="col-12">
+					<button type="submit" class="btn btn-dark">Submit</button>
+				</div>
+			</form>
 		</div>
-		
-		<div class="input-group mb-3">
-			<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-			<span class="input-group-text" id="basic-addon2">@example.com</span>
-		</div>
-		
-		<label for="basic-url" class="form-label">Your vanity URL</label>
-		<div class="input-group mb-3">
-			<span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-			<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-		</div>
-		
-		<div class="input-group mb-3">
-			<span class="input-group-text">$</span>
-			<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-			<span class="input-group-text">.00</span>
-		</div>
-		
-		<div class="input-group mb-3">
-			<input type="text" class="form-control" placeholder="Username" aria-label="Username">
-			<span class="input-group-text">@</span>
-			<input type="text" class="form-control" placeholder="Server" aria-label="Server">
-		</div>
-		
-		<div class="input-group">
-			<span class="input-group-text">With textarea</span>
-			<textarea class="form-control" aria-label="With textarea"></textarea>
-		</div>
-	</div>
+	</section>
 	<!-- INQUIRY PAGE END -->
+	
+
+	&nbsp;
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
