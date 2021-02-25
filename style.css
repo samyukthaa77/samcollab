@@ -25,3 +25,22 @@ body {
 .check-box__content {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.inquiry {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.inquiry__title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.footer__styles {
+    background-color: #c8cbe8;
+    height: 150px;
+}
+
+.icons {
+    margin: 10px;
+}
